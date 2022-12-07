@@ -6,12 +6,17 @@ Console.WriteLine("Введите второе число - ");
 string secondNum = Console.ReadLine();
 int num2 = int.Parse(secondNum);
 
+
+if (num1==num2)
+{
+    Console.WriteLine($"{num1} = {num2}");
+}
+
 if (num1 > num2)
 {
     Console.WriteLine($"{num1} > {num2}");
 }
-else
+if (num1 < num2)
 {
     Console.WriteLine($"{num2} > {num1}");
 }
-
