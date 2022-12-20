@@ -3,14 +3,14 @@ bool errorOcured = false;
 Console.WriteLine("====Spiral Matrix====\n");
 try
 {
-    Console.WriteLine("Enter size of the matrix:");
-    Console.Write("Row (m)? ");
+    Console.WriteLine("Укажите размеры матрицы:");
+    Console.Write("Количество строк?");
     m = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Column (n)? ");
+    Console.Write("Количество столбцов?");
     n = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Enter the starting number: ");
+    Console.Write("Введите первое число матрицы: ");
     start = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Enter step: ");
+    Console.Write("Шаг увеличения числа: ");
     step = Convert.ToInt32(Console.ReadLine());
     if (m < 0 || n < 0 || start < 0 || step < 0) throw new FormatException();
 }
